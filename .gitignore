@@ -13,6 +13,10 @@ dist/*
 */models-data/*
 
 .vscode
+.vs/
+
+bin/
+obj/
 
 scratchpad/
 
