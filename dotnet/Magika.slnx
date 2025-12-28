@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="Magika.StandardV3_3/Magika.StandardV3_3.csproj" />
+  <Project Path="Magika.Tests/Magika.Tests.csproj" />
+  <Project Path="Magika/Magika.csproj" />
+</Solution>

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <RootNamespace>Magika</RootNamespace>
+        <Version>1.0.0</Version>
+        <!--<Authors>Google</Authors>-->
+        <Description>File type detection using deep learning. A .NET port of Google's Magika.</Description>
+        <PackageTags>file-detection;mime-type;onnx;machine-learning;magika</PackageTags>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <!--<RepositoryUrl>https://github.com/google/magika</RepositoryUrl>-->
+        <IsAotCompatible>true</IsAotCompatible>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="..\..\assets\models\standard_v3_3\config.min.json" Link="Models\config.json" />
+        <EmbeddedResource Include="..\..\assets\models\standard_v3_3\model.onnx" Link="Models\model.onnx" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Magika\Magika.csproj" />
+    </ItemGroup>
+
+</Project>
